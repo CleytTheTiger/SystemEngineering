@@ -1,0 +1,18 @@
+table {
+	color: white;
+	border-collapse: collapse;
+	text-align: center;
+	height: 250px;
+	width: 450px;
+}
+td {
+	border: 1px solid white;
+	background-color: #AFE8FF;
+}
+thead td{
+	font-weight: 600;
+	background-color: #64D1FF;
+}
+.CompName {
+	background-color: #64D1FF;
+}

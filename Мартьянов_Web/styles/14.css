@@ -1,0 +1,54 @@
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid #FFB33F;
+	border-top: none;
+	display: block;
+	padding: 0;
+}
+/*Меню*/
+.header {
+	display: inline-block;
+	overflow: hidden;
+	background-color: #FFB33F;
+	width: 100%;
+	height: 50px;
+	margin: 0;
+}
+.form_radio_btn {
+	display: inline-block;
+	float: left;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	user-select: none;
+	height: 50px;
+	line-height: 50px;
+	font-size: 19px;
+	transition-property: color;
+	transition-duration: 0.25s;
+}
+.form_radio_btn input[type=radio]:checked + label {
+	background-color: white;
+	color: #FFB33F;
+}
+/*Основная часть*/
+.main h1 {
+	color: #DC9831;
+	font-size: 23px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.main p {
+	display: block;
+	padding: 15px 30px 15px 30px;
+	color: #F59E1B;
+	margin: 0;
+}
