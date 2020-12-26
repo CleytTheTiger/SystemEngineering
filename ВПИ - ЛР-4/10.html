@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 11</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		let a=23, ans, b;
+		while (a>=1) {
+			b=a;
+			ans+=String(b%2);
+			a=Math.floor(a/2);
+		};
+		ans=ans.split('').reverse().join('')
+		alert(ans);
+	</script>
+</head>
+<body>
+</body>
+</html>
