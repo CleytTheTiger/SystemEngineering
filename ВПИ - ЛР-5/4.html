@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 5</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/4.css">
+	<script>
+		function addNumber(num) {
+			if (num == "0" && document.getElementById("inp").value == "") {
+				alert("Нельзя вводить 0 первым!");
+				return;
+			}
+			else {
+				let text = document.getElementById("inp").value+num;
+				document.getElementById("inp").value = text;
+			};
+		};
+
+		function addAct(action) {
+			let str = document.getElementById("inp").value;
+			let symbols = ["+","-","/","*"]
+			if (str.length==0) {
+				alert("Вы не ввели никаких данных!");
+				return;
+			}
+			else if (symbols.indexOf(str.slice(-1)) != -1) {
+				alert("Нельзя Вводить две операции подряд!");
+				return;
+			}
+			else {
+				let text = document.getElementById("inp").value+action;
+				document.getElementById("inp").value = text;
+			};
+		};
+
+		function c() {
+			document.getElementById("inp").value = "";
+		};
+
+		function calc() {
+			text = document.getElementById("inp").value;
+			result = eval(text);
+			if (result == "Infinity") {
+				alert("Ай-ай-ай, нельзя делать на ноль!");
+				return;
+			}
+			else {
+				document.getElementById("inp").value = result;
+			};
+		};
+	</script>
+</head>
+	<body>
+		<div class="main">
+		<div class="head">
+			<input type="text" id="inp" value="">
+		</div>
+		<div class="buttons">
+			<table>
+				<tr>
+					<td colspan="3"><input type="button" value="C" id="delete" onclick="c()"></td>
+					<td><input type="button" value="/" onclick="addAct('/')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="7" onclick="addNumber('7')"></td>
+					<td><input type="button" value="8" onclick="addNumber('8')"></td>
+					<td><input type="button" value="9" onclick="addNumber('9')"></td>
+					<td><input type="button" value="X" onclick="addAct('*')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="4" onclick="addNumber('4')"></td>
+					<td><input type="button" value="5" onclick="addNumber('5')"></td>
+					<td><input type="button" value="6" onclick="addNumber('6')"></td>
+					<td><input type="button" value="-" onclick="addAct('-')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="1" onclick="addNumber('1')"></td>
+					<td><input type="button" value="2" onclick="addNumber('2')"></td>
+					<td><input type="button" value="3" onclick="addNumber('3')"></td>
+					<td><input type="button" value="+" onclick="addAct('+')"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="button" value="0" onclick="addNumber('0')"></td>
+					<td><input type="button" value="=" id="eq" onclick="calc()"></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 3</title>
+	<meta charset="utf-8">
+	<script>
+		function copyText() {
+			let text = document.getElementById("inp1").value;
+			if (text.length != 0) {
+				document.getElementById("inp2").value = text;
+			}
+			else {
+				alert("Введите текст в первое поле!");
+			};
+		};
+		
+		function clearInput() {
+			document.getElementById("inp1").value = "";
+			document.getElementById("inp2").value = "";
+		}
+	</script>
+</head>
+	<body>
+		<form>
+			<input type="text" name="input1" id="inp1">
+			<input type="text" name="input2" id="inp2">
+			<input onclick="copyText()" type="button" name="button1" value="Копировть">
+			<input onclick="clearInput()" type="button" name="button2" value="Очистить">
+		</form>
+	</body>
+</html>
