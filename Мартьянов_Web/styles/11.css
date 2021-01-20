@@ -1,0 +1,56 @@
+div {
+	width: 100px;
+	height: 100px;
+}
+.red1 {
+	border: 1px solid red;
+}
+.blue1 {
+	border: 1px solid blue;
+	margin-top: 25px;
+	margin-left: 125px;
+}
+.green1 {
+	border: 1px solid green;
+	margin-top: 25px;
+	margin-left: 250px;
+}
+.red2 {
+	border: 1px solid red;
+	position: relative;
+	top:25px;
+}
+.blue2 {
+	border: 1px solid blue;
+	position: relative;
+	bottom: 75px;
+	left: 125px;
+}
+.green2 {
+	border: 1px solid green;
+	position: relative;
+	left: 250px;
+	bottom: 175px;
+}
+.red3 {
+	border: 1px solid red;
+	background-color: red;
+	position: relative;
+	z-index: 1;
+}
+.blue3 {
+	border: 1px solid blue;
+	background-color: blue;
+	position: relative;
+	left: 50px;
+	bottom: 50px;
+	z-index: 3;
+}
+.green3 {
+	border: 1px solid green;
+	background-color: green;
+	position: relative;
+	bottom: 100px;
+	left: 100px;
+	z-index: 2;
+}

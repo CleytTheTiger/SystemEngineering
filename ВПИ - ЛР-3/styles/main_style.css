@@ -1,0 +1,162 @@
+body {
+	background-color: #f1f4f9;
+}
+
+/*Блок Header*/
+header button span {
+	font-family: FontAwesome;
+}
+.menu {
+	display: inline-block;
+}
+header label span {
+	font-family: FontAwesome;
+}
+header input[type="checkbox"] {
+	display: none;
+}
+header label[for="menu_opener"] {
+	display: none;
+	position: relative;
+}
+header {
+ 	text-align: left;
+}
+header ul {
+	width: 27%;
+ 	list-style: none;
+ 	border-bottom: 2px solid #b3bddf;
+ 	padding: 0;
+ 	display: inline-flex;
+ 	margin: 5px 100px 5px 5px;
+ 	font-size: 75%;
+}
+header ul li {
+	font-size: 15px;
+ 	display: block;
+ 	padding: 5px 10px;
+ 	margin: 0 auto;
+ 	width: auto;
+}
+header form {
+ 	text-align: center;
+ 	width: 20%;
+ 	display: inline-block;
+ 	position: relative;
+  	margin: 0 auto;
+}
+header input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  border: 2px solid #b3bddf;
+  border-radius: 5px;
+  outline: none;
+  color: #9E9C9C;
+}
+header button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #b3bddf;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+}
+a:hover {
+	color: #b3bddf;
+}
+a:visited {
+	color: black;
+}
+
+/*Блок "шапка"*/
+.logo {
+	background-image: url(https://avatanplus.com/files/resources/original/58c968906b9d715ad2c07439.jpg);
+	background-position-x: right;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	min-height: 300px;
+	box-shadow: inset 0 0 5px 10px #f1f4f9;
+	border: 2px solid rgba(241,244,249,1.5);
+	width: 100%;
+}
+.logo h1 {
+	font-size: 45px;
+	padding: 30px 15px;
+}
+
+/*Секции*/
+section {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 5px;
+}
+section div {
+	max-width: 490px;
+	text-align: justify;
+	margin: 5px;
+	padding: 5px;
+	font-size: 20px;
+	background-color: #b3bddf;
+}
+.section_heading_1, .section_heading_2, .section_desc {
+	padding: 10px;
+	margin: 7px;
+}
+.section_heading_1 {
+	font-size: 30px;
+}
+.section_heading_2 {
+	font-size: 22px;
+}
+
+/*Адаптивность страницы*/
+@media (max-width: 1180px) {
+	.logo {
+		background-size: 
+	}
+	.logo h1 {
+		font-size: 35px;
+	}
+	header ul li {
+		font-size: 10px;
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.more_divs {
+		display: block;	
+	}
+	.more_divs div {
+		min-width: 75%;
+		max-width: 90%;
+		margin: 5px auto;
+	}
+}
+@media (max-width: 850px) {
+	section {
+		display: block;
+	}
+	section div {
+		min-width: 75%;
+		max-width: 90%;
+		margin: 5px auto;
+	}
+}
+@media (max-width: 670px) {
+	.logo h1 {
+		margin-top: 25%;
+	}
+	header form {
+		width: 30%;
+	}
+	header ul {
+		width: 60%;
+		margin: 5px auto;
+	}
+}

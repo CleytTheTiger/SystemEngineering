@@ -1,0 +1,15 @@
+.wrapper{
+    width:450px;
+    height:450px;
+    position: relative;
+}
+.wrapper .cell{
+    background-color: aliceblue;
+    border: 1px solid #cfcfcf;
+    cursor: pointer;
+    float: left;
+    font-size: 100px;
+    height: 148px;
+    text-align: center;
+    width: 148px;
+}

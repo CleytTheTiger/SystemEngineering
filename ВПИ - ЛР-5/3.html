@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 4</title>
+	<meta charset="utf-8">
+	<script>
+		function createTable() {
+			let x = Number(document.getElementById("inp1").value);
+			let y = Number(document.getElementById("inp2").value);
+			tabHolder = document.getElementById("tabHolder");
+			newTab = document.createElement("table");
+			for (var i = 0; i < x; i++) {
+				newRow = document.createElement("tr");
+				for (var j = 0; j < y; j++) {
+					newCell = document.createElement("td");
+					newCell.innerHTML = String(Math.floor(Math.random() * (11 - 1)) + 1);
+					newRow.appendChild(newCell);
+				};
+				newTab.appendChild(newRow);
+			};
+			tabHolder.appendChild(newTab);
+		};
+	</script>
+	<style type="text/css">
+		#tabHolder table {
+			border-collapse: collapse;
+			margin: 5px;
+
+		}
+		#tabHolder table td{
+			border: 1px solid black;
+			padding: 5px;
+			text-align: center;
+		}
+	</style>
+</head>
+	<body>
+		<form>
+			<input type="text" placeholder="Строки" id="inp1">
+			<input type="text" placeholder="Столбцы" id="inp2">
+			<input onclick="createTable()" type="button" value="Создать таблицу">
+		</form>
+		<div id="tabHolder">
+		</div>
+	</body>
+</html>

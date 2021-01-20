@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 2</title>
+	<meta charset="utf-8">
+	<script>
+		function PasteText() {
+			document.getElementById('textInput').value = Math.floor(Math.random() * (11 - 1)) + 1;
+		};
+	</script>
+</head>
+<body>
+	<form>
+		<input id="textInput" name="input">
+		<input type="button" onclick="PasteText()" value="Ещё кнопОчка">
+	</form>
+</body>
+</html>

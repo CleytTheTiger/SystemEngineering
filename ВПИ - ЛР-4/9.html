@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 1</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function getRandomInRange(min, max) {
+  			return Math.floor(Math.random() * (max - min + 1)) + min;
+		};
+
+		let arr=[], sum=0;
+		for(let i = 0; i < 5; i++) {
+			arr[i]=getRandomInRange(1,10);
+			sum+=(arr[i]**2);
+		};
+		alert(arr);
+		alert(sum);
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,9 @@
+button {
+	background-color: grey;
+}
+input:disabled {
+	font-size: 25px;
+}
+input:checked + label {
+	background-color: green;
+}

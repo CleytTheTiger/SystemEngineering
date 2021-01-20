@@ -1,0 +1,84 @@
+form {
+	display: block;
+	width: 600px;
+	margin: 0;
+}
+form h1 {
+	font-size: 20px;
+}
+.form_body {
+	border: 2px solid grey;
+	border-right: none;
+	border-left: none;
+	display: block;
+	list-style: none;
+	padding: 0;
+}
+.form_body li {
+	margin: 0;
+	display: inline-block;
+	min-height: 50px;
+	max-height: auto;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	width: 100%;
+	}
+.form_body li label {
+	width: 125px;
+	display: inline-block;
+	line-height: 50px;
+}
+.form_body li label[for="Message"] {
+}
+.form_body textarea{
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid grey;
+	border-radius: 3px;
+	transition-property: width;
+	transition-property: height;
+	transition-duration: 0.25s;
+}
+.form_body input[type="text"], .form_body input[type="email"], .form_body input[type="url"] {
+	width: 190px;
+	height: 20px;
+	border: 1px solid grey;
+	border-radius: 3px;
+	transition-property: width;
+	transition-property: height;
+	transition-duration: 0.25s;
+}
+.req {
+	color: red;
+}
+button {
+	background-color: #8CB62A;
+	color: white;
+	font-weight: 500;
+	width: 100px;
+	height: 25px;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	margin: 15px 0 15px 0;
+
+}
+input[type="text" placeholder], .form_body input[type="email" placeholder], .form_body input[type="url" placeholder], textarea[placeholder] {
+	font-family: Times New Roman;
+	font-size: 14px;
+}
+.form_body input[type="text"]:focus, .form_body input[type="email"]:focus, .form_body input[type="url"]:focus {
+	height: 25px;
+	width: 195px;
+}
+.form_body textarea:focus {
+	width: 255px;
+	height: 105px;
+}
+input:invalid:not(:placeholder-shown) {
+	border-color: rgb(238,34,34);
+	box-shadow: 0px 0px 1px 1px rgba(238,34,34,0.7);
+}
+input:valid:not(:placeholder-shown) {
+	border-color: rgba(140,182,42);
+	box-shadow: 0px 0px 1px 1px rgba(140,182,42,0.7);
+}

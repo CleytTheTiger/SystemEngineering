@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/15.css">
+	<style type="">
+		.form_body input[type="text"], .form_body input[type="email"], .form_body input[type="url"] {
+			width: 190px;
+			height: 20px;
+			outline: none;
+		}
+		.form_body textarea {
+			width: 250px;
+			height: 100px;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Contact Us</h1>
+		<ul class="form_body">
+			<li>
+				<label for="Name">Name: <span class="req">*</span></label><input type="text" name="Name" id="Name" placeholder="Enter your name" required tabindex="100" minlength="3" title="Введите ваше полное имя!">
+			</li>
+			<li>
+				<label for="Email">Email: <span class="req">*</span></label><input type="email" name="Email" id="Email" placeholder="Enter your Email" required tabindex="200" title="Введите ваш Email!">
+			</li>
+			<li>
+				<label for="Website">Website: <span class="req">*</span></label><input type="url" name="Website" id="Website" placeholder="Enter URL" required tabindex="300" title="Введите правильный URL!">
+			</li>
+			<li>
+				<label for="Message">Message:</label><textarea id="Message" placeholder="Here's your message" tabindex="400"></textarea> <span class="image"></span>
+			</li>
+			<li>
+				<label></label><button tabindex="500">Submit Form</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
